@@ -35,60 +35,60 @@ a. Steghide (Image and Audio Steganography)
 
 Installation:
 
-sudo apt install steghide  # Linux
-brew install steghide       # macOS
+# sudo apt install steghide  # Linux
+# brew install steghide       # macOS
 
 Hide a flag inside an image:
 
-steghide embed -cf image.jpg -ef flag.txt -sf output.jpg -p ctfpass
+# steghide embed -cf image.jpg -ef flag.txt -sf output.jpg -p ctfpass
 
 Extract the hidden flag from an image:
 
-steghide extract -sf output.jpg -p ctfpass
+# steghide extract -sf output.jpg -p ctfpass
 
 b. OpenStego (Image Steganography)
 
 Installation:
 
-sudo apt install openstego  # Linux
+# sudo apt install openstego  # Linux
 
 Embed a flag into an image:
 
-openstego embed -mf flag.txt -cf image.png -sf stego.png -p ctfpass
+# openstego embed -mf flag.txt -cf image.png -sf stego.png -p ctfpass
 
 Extract the hidden flag:
 
-openstego extract -sf stego.png -p ctfpass
+# openstego extract -sf stego.png -p ctfpass
 
 c. ExifTool (Metadata Steganography)
 
 Installation:
 
-sudo apt install exiftool  # Linux/macOS
+# sudo apt install exiftool  # Linux/macOS
 
 Check for hidden flags in metadata:
 
-exiftool image.jpg
+# exiftool image.jpg
 
 d. Zsteg (PNG Steganography)
 
 Installation:
 
-gem install zsteg  # Requires Ruby
+# gem install zsteg  # Requires Ruby
 
 Scan PNG files for hidden flags:
 
-zsteg image.png
+# zsteg image.png
 
 e. Strings (Text-based Steganography)
 
 Installation:
 
-sudo apt install binutils  # Linux
+# sudo apt install binutils  # Linux
 
 Extract readable text from files:
 
-strings file.jpg | grep "CTF"
+# strings file.jpg | grep "CTF"
 
 3. Advanced CTF Steganography Techniques
 
@@ -110,21 +110,21 @@ a. StegSeek (JPG Steganography)
 
 Installation:
 
-sudo apt install stegseek  # Linux
+# sudo apt install stegseek  # Linux
 
 Brute-force a hidden password-protected flag:
 
-stegseek image.jpg wordlist.txt
+# stegseek image.jpg wordlist.txt
 
 b. Binwalk (Extract Hidden Data in Files)
 
 Installation:
 
-sudo apt install binwalk  # Linux
+# sudo apt install binwalk
 
 Extract hidden data from a file:
 
-binwalk -e file.png
+# binwalk -e file.png
 
 Conclusion
 
